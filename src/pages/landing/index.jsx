@@ -1,7 +1,8 @@
 import React from "react";
-import Hero from "./components/hero";
+
 import About from "./components/About";
-import Footer from "../../components/Footer";
+import Hero from "./components/Hero";
+import Footer from "../../components/footer";
 
 const LandingPage = () => {
   return (
