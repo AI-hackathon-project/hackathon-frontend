@@ -1,9 +1,10 @@
 import Hero from "./components/hero";
-import About from "./components/about";
+import About from "./components/About";
+
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
-import Contacts from "./components/contact";
-import Testimonials from "./components/testimonials";
+import Contacts from "./components/Contact";
+import Testimonials from "./components/Testimonials";
 const LandingPage = () => {
   return (
     <div>
