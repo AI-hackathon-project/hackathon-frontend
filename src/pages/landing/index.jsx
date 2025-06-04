@@ -1,3 +1,4 @@
+import Services from "./components/services";
 import Hero from "./components/hero";
 import About from "./components/about";
 import Footer from "../../components/footer";
@@ -9,6 +10,7 @@ const LandingPage = () => {
     <div>
       <Navbar />
       <Hero />
+      <Services />
       <About />
      <Testimonials />
       <Contacts />
