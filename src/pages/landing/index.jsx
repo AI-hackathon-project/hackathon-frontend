@@ -1,11 +1,10 @@
-import Services from "./components/services";
-import Hero from "./components/hero";
-import About from "./components/About";
-
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
-import Contacts from "./components/Contact";
-import Testimonials from "./components/Testimonials";
+import Services from "./components/services.jsx";
+import Hero from "./components/hero.jsx";
+import About from "./components/About.jsx";
+import Footer from "../../components/footer.jsx";
+import Navbar from "../../components/navbar.jsx";
+import Contacts from "./components/Contact.jsx";
+import Testimonials from "./components/Testimonials.jsx";
 const LandingPage = () => {
   return (
     <div>
