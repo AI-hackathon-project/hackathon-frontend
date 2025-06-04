@@ -43,6 +43,21 @@ const K = {
     description: "Connect with other mothers and share experiences in a supportive environment."
   }
 ],
+
+Testimonial: [
+  {
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80',
+    quote:
+      'Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.',
+    author: 'Richard Anderson',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80',
+    quote:
+      'Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.',
+    author: 'Chris Peters',
+  },
+],
 };
 
 
