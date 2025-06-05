@@ -1,6 +1,18 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+
+body {
+  font-family: "Noto Sans", -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 
 
