@@ -36,6 +36,6 @@ const K = {
     { label: "More than half the days", value: 2 },
     { label: "Nearly every day", value: 3 },
   ],
-};
+},
 
 export default K;
