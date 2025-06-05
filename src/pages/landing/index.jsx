@@ -1,15 +1,19 @@
-import React from "react";
 import About from "./components/About";
-import Footer from "../../components/footer";
-import Services from "./components/services";
 import Hero from "./components/hero";
-
+import Contacts from "./components/contact";
+import Services from "./components/services";
+import Testimonials from "./components/testimonials";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 const LandingPage = () => {
   return (
     <div>
+      <Navbar />
       <Hero />
       <Services />
       <About />
+     <Testimonials />
+      <Contacts />
       <Footer />
     </div>
   );

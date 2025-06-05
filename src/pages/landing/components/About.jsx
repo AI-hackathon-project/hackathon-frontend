@@ -1,5 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { CheckCircle, Award, Heart, Users } from 'lucide-react';
+import K from '../../../constant';
+import aboutImage from "../../../assets/images/a70bddb9-77ce-43f8-bb0d-e9d9ef770312.jpg"
+import aboutImage1 from "../../../assets/images/DJV MAR 1021-08.jpg"
+
 
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -25,32 +28,12 @@ const About = () => {
         };
     }, []);
 
-    const features = [
-        {
-            icon: <CheckCircle className="w-6 h-6 text-[#cf221f]" />,
-            title: "24/7 Support",
-            description: "Round-the-clock access to AI-powered maternal health guidance and support."
-        },
-        {
-            icon: <Award className="w-6 h-6 text-[#cf221f]" />,
-            title: "Expert Insights",
-            description: "Medically validated advice based on the latest maternal health research."
-        },
-        {
-            icon: <Heart className="w-6 h-6 text-[#cf221f]" />,
-            title: "Personalized Care",
-            description: "Tailored recommendations based on your unique pregnancy journey."
-        },
-        {
-            icon: <Users className="w-6 h-6 text-[#cf221f]" />,
-            title: "Community",
-            description: "Connect with other mothers and share experiences in a supportive environment."
-        }
-    ];
+    const features = K.FEATURES;
+
 
     return (
         <section
-            id="about"
+            id="About"
             ref={sectionRef}
             className="py-7 sm:py-12 md:py-16 lg:py-20 cursor-default min-h-screen relative overflow-hidden"
         >
@@ -61,10 +44,10 @@ const About = () => {
 
                 {/* Floating shapes with responsive sizing */}
                 <div className="absolute -top-[10%] -left-[10%] w-[80%] sm:w-[60%] lg:w-[50%] aspect-square bg-[#F2CEC2]/30 rounded-[30%] blur-3xl transform rotate-12"></div>
-                <div className="absolute top-[20%] right-[5%] w-[40%] sm:w-[30%] aspect-square bg-[#FCC988]/20 rounded-full blur-2xl"></div>
-                <div className="absolute bottom-[10%] left-[15%] w-[35%] sm:w-[25%] aspect-square bg-[#E69695]/25 rounded-full blur-2xl"></div>
-                <div className="absolute top-[40%] right-[20%] w-[25%] aspect-square bg-[#C3C198]/20 rounded-[40%] blur-xl transform -rotate-15"></div>
-                <div className="absolute bottom-[30%] right-[10%] w-[45%] sm:w-[35%] aspect-square bg-[#FDB082]/15 rounded-[60%] blur-2xl transform rotate-45"></div>
+                <div className="absolute top-[20%] right-[5%] w-[40%] sm:w-[30%] aspect-square bg-[#FCC988]/20 rounded-full blur-2xl z-12"></div>
+                <div className="absolute bottom-[10%] left-[15%] w-[35%] sm:w-[25%] aspect-square bg-[#E69695]/25 rounded-full blur-2xl z-12"></div>
+                <div className="absolute top-[40%] right-[20%] w-[25%] aspect-square bg-[#C3C198]/20 rounded-[40%] blur-xl transform -rotate-15 z-12"></div>
+                <div className="absolute bottom-[30%] right-[10%] w-[45%] sm:w-[35%] aspect-square bg-[#FDB082]/15 rounded-[60%] blur-2xl transform rotate-45 z-12"></div>
             </div>
 
 
@@ -75,9 +58,9 @@ const About = () => {
                             }`}
                     >
                         {/* Main square image */}
-                        <div className="relative aspect-square w-full max-w-lg mx-auto rounded-2xl shadow-xl">
+                        <div className="relative aspect-square w-full max-w-lg mx-auto">
                             <img
-                                src="https://images.pexels.com/photos/4546120/pexels-photo-4546120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                src={aboutImage}
                                 alt="Mother and child"
                                 className="w-full h-full object-cover"
                             />
@@ -86,11 +69,11 @@ const About = () => {
 
                             {/* Overlay image at bottom right */}
                             <div
-                                className={`absolute -bottom-8 sm:-bottom-12 -right-4 sm:-right-12 w-1/3 aspect-square rounded-lg shadow-lg overflow-hidden border-4 border-white transition-all duration-1000 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                                className={`absolute -bottom-8 sm:-bottom-12 -right-4 sm:-right-12 w-1/3 aspect-square rounded-lgshadow-lg overflow-hidden border-4 border-white transition-all duration-1000 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                                     }`}
                             >
                                 <img
-                                    src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    src={aboutImage1}
                                     alt="Healthcare professional"
                                     className="w-full h-full object-cover"
                                 />
@@ -105,7 +88,7 @@ const About = () => {
                             }`}
                     >
                         <span className="border-2 border-[#E69695] px-4 sm:px-6 py-3 rounded-full text-primary-500 font-medium mb-2 inline-block">ABOUT US</span>
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-black to-[#E15B42] mb-4">
                             Transforming Maternal Healthcare
                         </h2>
                         <div className="w-20 h-1 bg-[#FCC988] mb-6"></div>
